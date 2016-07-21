@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SampleApp1"
+             x:Class="SampleApp1.MainPage">
+
+  <StackLayout>
+    <Label Text="Welcome to Xamarin Forms!"
+             VerticalOptions="Center"
+             HorizontalOptions="Center" />
+    <Entry Text="{Binding input1, Mode=TwoWay}" />
+    <Button x:Name="button1" Text="add List" />
+    <Entry Text="{Binding input2, Mode=TwoWay}" />
+    <Button x:Name="button2" Text="addb List" />
+    <Button x:Name="clear" Text="clear index 0" />
+    <ListView ItemsSource="{Binding inputToList}" />
+  </StackLayout>
+
+</ContentPage>
